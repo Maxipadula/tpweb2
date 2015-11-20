@@ -26,23 +26,20 @@
                 </li>
 
                 <li>
-                    <a href="LISTAS/<?php echo $lista_transportes?>">TRANSPORTES</a>
+                    <a target="_blank" href="./<?php echo $lista_transportes?>">TRANSPORTES</a>
+                </li>
+
+				
+				<li>
+                    <a target="_blank" href="./<?php echo $lista_viajes?>">VIAJES</a>
                 </li>
 				
 				<li>
-                    <a href="LISTAS/<?php echo $lista_listados?>">LISTADOS</a>
+                    <a target="_blank" href="./<?php echo $lista_permisos?>">PERMISOS</a>
                 </li>
 				
 				<li>
-                    <a href="LISTAS/<?php echo $lista_viajes?>">VIAJES</a>
-                </li>
-				
-				<li>
-                    <a href="LISTAS/<?php echo $lista_permisos?>">PERMISOS</a>
-                </li>
-				
-				<li>
-                    <a href="LISTAS/<?php echo $lista_reparaciones?>">REPARACIONES</a>
+                    <a target="_blank" href="./<?php echo $lista_reparaciones?>">REPARACIONES</a>
                 </li>
 
                 <li>

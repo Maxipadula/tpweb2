@@ -124,6 +124,10 @@
 				//listados 
 				$listados_datos="listados_datos.php";
 				$lista_usuarios="lista_usuarios.php";
+				$lista_transportes="lista_transportes.php";
+				$lista_viajes="lista_viajes.php";
+				$lista_permisos="lista_permisos.php";
+				$lista_reparaciones="lista_reparaciones.php";
 	
 	
 	
