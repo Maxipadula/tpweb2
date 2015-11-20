@@ -22,7 +22,7 @@
 		   <nav id='divNav'>
             <ul>
                 <li>
-                    <a href="./<?php echo $lista_usuarios?>">USUARIOS</a>
+                    <a target="_blank" href="./<?php echo $lista_usuarios?>">USUARIOS</a>
                 </li>
 
                 <li>
