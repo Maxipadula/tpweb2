@@ -19,10 +19,7 @@
 	
 	
 	?>
-	
 
-
-		
 		   
 		      	<div id='divHeader_supervisor'>
 			<h1>VIAJES</h1>

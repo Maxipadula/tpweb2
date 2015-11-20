@@ -3,7 +3,9 @@
 <head>
 </head>
 <body>
-	<?php $id = $_GET["ID"];
+	<?php
+    	$id_v=$_GET["ID"];
+
 	 include ('../rutas.php');?>
 	
 	
@@ -11,12 +13,12 @@
 	 	<h2>MODIFICAR VIAJES</H2>
 		<p>Que dato desea modificar?</p>
 
-		<form class='contacto' method="post" action="<?php echo $menu_modificacion_viajes2?>">
+		<form class='contacto' method="post"  action="<?php echo $menu_modificacion_viajes2?>">
 			<div id="alineacion">
 			</br>
  				<div><label>ID</label>
 					</br>
-					<input type="text" name="id_viaje"  value="<?php echo $id?>"readonly = "readonly">
+					<input type="text" name="id_viajee"  value="<?php echo $id_v?>"readonly = "readonly">
  				</div>	
  			</br>
 			<!--<input type="checkbox" name="datos[]" value="id">ID VIAJE</input>
@@ -26,7 +28,7 @@
 			<br>
 			<input type="checkbox" name="datos[]" value="acoplado">ACOPLADO</input>
 			<br>
-			<input type="checkbox" name="datos[]" value="trasnporte">TRANSPORTE</input>
+			<input type="checkbox" name="datos[]" value="transporte">TRANSPORTE</input>
 			<br>
 			<input type="checkbox" name="datos[]" value="origen">ORIGEN</input>
 			<br>

@@ -15,7 +15,7 @@
 	 	<p>SELECCIONE VIAJE A MODIFICAR</p>
  
 		
-		<form class='contacto' method="post" action="<?php echo $usuario_a_modificar ?>">
+		<form class='contacto' method="get" action="<?php echo $usuario_a_modificar ?>">
 			<div id="contacto">
 		
 		
