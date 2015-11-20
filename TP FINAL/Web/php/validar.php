@@ -51,7 +51,7 @@
 				 $_SESSION["nombre"] = $fila1['nombre'] ;
 				 
 				 
-                 header("location:./".$supervisor_home."");
+                 header("location:./SUPERVISOR/".$supervisor_home."");
 			 
 			
 			}else header("location:error.php");

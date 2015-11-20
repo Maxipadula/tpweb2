@@ -41,6 +41,13 @@
 					<input type="text" name="km_recorridos_viaje" size="5">
 					</label>
 				</div>
+				
+					
+				<div><label>COMBUSTIBLE CONSUMIDO
+					<input type="text" name="combustbile" size="5">
+					</label>
+				</div>
+				
 				</br>
 				
 			

@@ -28,7 +28,7 @@
 		
 	
 	//supervisor
-	$supervisor_home = "SUPERVISOR/supervisor_home.php";
+	$supervisor_home = "supervisor_home.php";
 	$registrar_datos_sup="registrar_datos_sup.php";
 	   
 	   //gestion de viajes
@@ -123,6 +123,8 @@
 			   $graficos = "GRAFICOS";
 			   $graficos_datos = "graficos_datos.php";
 			   $rendimiento_km = "rendimiento_km.php";
+			   $rendimiento_combustible="rendimiento_combustible.php";
+			   $graficar_combustible="graficar_combustible.php";
 			   
 				//listados 
 				$listados_datos="listados_datos.php";

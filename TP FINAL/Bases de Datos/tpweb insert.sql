@@ -207,16 +207,16 @@ SELECT T.id_transporte, T.patente, V.id_viaje, A.paten
 from acoplado;*/    
 
 insert into viaje (id_viaje, id_usuario,id_acoplado, id_transporte, origen, km_recorridos,
-				 destino, cliente, fecha_inicio, fecha_fin, carga)
-values	(1122, 10,101, 2222, 'Buenos Aires', 10000, 'Florianopolis', 'Pedromania', '2015-06-05 07:20:21', '2015-06-06 09:36:55', 'pantalones'),
-		(2233, 20,0, 6666, 'Salta',8900, 'Buenos aires','Ropamania', '2015-08-09 07:00:20','2015-08-09 04:00:20', 'poleras'),
-		(3344, 60,101, 5555, 'Rio Negro',  4000, 'Chile','TodoRopa', '2015-10-11 05:00:00', '2015-11-11 01:18:05', 'pantalones'),
-		(4455, 40,401, 1111, 'Cordoba',  9000, 'Bolivia','Todopordospesos', '2015-08-01 05:25:54','2015-08-01 18:25:55','remeras'),
-		(5566, 30,0, 3333, 'Misiones', 4000, 'Montevideo','sisis', '2015-12-12 12:30:34', '2015-12-12 16:30:00','medias'),
-		(6677, 50,601, 4444, 'Mendoza',  8500, 'Asuncion','nadanada', '2015-07-06 12:00:20', '2015-07-06 20:40:29','buzos');
+				 destino, cliente, fecha_inicio, fecha_fin, carga,combustible_cons)
+values	(1122, 30,101, 2222, 'Buenos Aires', 10000, 'Florianopolis', 'Pedromania', '2015-06-05 07:20:21', '2015-06-06 09:36:55', 'pantalones',600),
+		(2233, 40,0, 6666, 'Salta',8900, 'Buenos aires','Ropamania', '2015-08-09 07:00:20','2015-08-09 04:00:20', 'poleras',100),
+		(3344, 50,101, 2222, 'Rio Negro',  4000, 'Chile','TodoRopa', '2015-10-11 05:00:00', '2015-11-11 01:18:05', 'pantalones',500),
+		(4455, 30,401, 1111, 'Cordoba',  9000, 'Bolivia','Todopordospesos', '2015-08-01 05:25:54','2015-08-01 18:25:55','remeras',400),
+		(5566, 30,0, 2222, 'Misiones', 4000, 'Montevideo','sisis', '2015-12-12 12:30:34', '2015-12-12 16:30:00','medias',600),
+		(6677, 50,601, 2222, 'Mendoza',  8500, 'Asuncion','nadanada', '2015-07-06 12:00:20', '2015-07-06 20:40:29','buzos',750);
 
-select *
-from viaje; 
+SELECT Km_recorridos km
+										   FROM viaje ; 
 
 
 /*

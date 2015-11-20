@@ -4,6 +4,7 @@
 	$fecha_hora =$_POST ["fecha_hora_viaje"];
 	$km_recorridos =$_POST ["km_recorridos_viaje"];
 	$id_usuario = $_SESSION["id_usuario"];
+	$combustible = $_POST["combustbile"];
 
 		include ('../rutas.php');
 	
@@ -22,7 +23,8 @@
 	
 	$update_viaje_km_recorridos = mysql_query("UPDATE viaje
 												SET fecha_fin = '".$fecha_hora."',
-													km_recorridos = '".$km_recorridos."'
+													km_recorridos = '".$km_recorridos."',
+													combustible_cons ='".$combustible."'
 												where id_viaje = '".$id_viaje."'");
 									   
 	

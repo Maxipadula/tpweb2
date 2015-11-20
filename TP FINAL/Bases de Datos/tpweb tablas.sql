@@ -151,6 +151,7 @@ create table if not exists viaje
      fecha_inicio datetime,
      fecha_fin datetime,
      carga varchar(30),
+     combustible_cons int,
 	 constraint viaje_pk primary key (id_viaje),
      constraint id_usuario_viaje foreign key (id_usuario) references usuario (id_usuario)
      ON DELETE CASCADE

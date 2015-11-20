@@ -2,7 +2,7 @@
 
 	<?php include ("supervisor_home.php");
 	
-			session_start();
+			
 	 
 		include ('../rutas.php');
 	  

@@ -31,7 +31,7 @@
 		  
            <li><a href="<?php echo $rendimiento_km ?>">RENDIMIENTO DE LOS VEHICULOS EN KM</a></li>
 		
-		   <li><a href="">RENDIMIENTO PROMEDIO DE CONSUMO DE COMBUSTIBLE</a></li>
+		   <li><a href="<?php echo $rendimiento_combustible ?>">RENDIMIENTO PROMEDIO DE CONSUMO DE COMBUSTIBLE</a></li>
 
 		   <li> <a href="">SALIR</a></li>
 	
