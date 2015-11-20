@@ -44,6 +44,8 @@
 		$validar_datos_viaje ="validar_datos_viajes.php";
 		$validar_datos_reparacion = "validar_datos_reparacion.php";
 		$validar_modificacion_reparacion="validar_modificacion_reparacion.php";
+		$validar_modificacion_reparacion2="validar_modificacion_reparacion2.php";
+		$validar_modificacion_reparacion3="validar_modificacion_reparacion3.php";
 		
 		//gestion de reparaciones
 		$reparacion_datos ="reparacion_datos.php";
@@ -51,6 +53,7 @@
 		$modificar_reparacion ="modificar_reparacion.php";
 		$eliminar_reparacion="eliminar_reparacion.php";
 		$validar_eliminar_reparacion="validar_eliminar_reparacion.php";
+		$validar_modificacion_reparacion="validar_modificacion_reparacion.php";
 		
 		//ver mapa
 		$ver_mapa="ver_mapa.php";
