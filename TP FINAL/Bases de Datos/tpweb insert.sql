@@ -197,7 +197,10 @@ values	(0, 'sin acoplado',0),
 		(601, 'acoplado6',0)
 ;
     
-
+SELECT T.id_transporte, T.patente, V.id_viaje, A.paten
+												  FROM transporte T inner join 
+													    viaje V on T.id_transporte = V.id_transporte inner join 
+														acoplado A on V.id_acoplado = A.id_acoplado;
     
     
 /*select *
@@ -212,9 +215,9 @@ values	(1122, 10,101, 2222, 'Buenos Aires', 10000, 'Florianopolis', 'Pedromania'
 		(5566, 30,0, 3333, 'Misiones', 4000, 'Montevideo','sisis', '2015-12-12 12:30:34', '2015-12-12 16:30:00','medias'),
 		(6677, 50,601, 4444, 'Mendoza',  8500, 'Asuncion','nadanada', '2015-07-06 12:00:20', '2015-07-06 20:40:29','buzos');
 
-/*select *
+select *
 from viaje; 
-*/
+
 
 /*
 SELECT V.id_viaje id_vi, U.nombre nomb , A.descripcion descrip, T.id_transporte id_trans, 
@@ -317,9 +320,9 @@ values	(123, 006, 5555,1, 15000, '2015-08-06'),
 		(131, 003, 6666,9, 2500,'2015-06-26');
 
         
-/*select * 
+select * 
 from reparacion;
-*/
+
 insert into alar_transp (id_transporte, id_alarmas, contador)
 values	(1111, 990, 10),
         (1111, 991, 5),

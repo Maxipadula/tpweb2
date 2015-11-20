@@ -29,6 +29,9 @@
 									   echo $id_modif;
 		
 	}
+	
+	
+	
     
 	if (isset ($_POST["acoplado"])){
 		$update_acoplado = mysql_query("UPDATE viaje

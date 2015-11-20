@@ -31,6 +31,19 @@
 	  $insert_viaje = mysql_query("insert into viaje (id_viaje, id_usuario,id_acoplado, id_transporte, origen, km_recorridos, destino, cliente, fecha_inicio, fecha_fin, carga) 
  									values (".$id_viaj.",".$id_usua.",".$acoplado.",".$id_trnsp.",'".$orig."','0','".$destin."','".$client."', '".$fecha_inic."','0000-00-00 00:00:00', '".$carg."')  
  										    ;")or die (mysql_error()); 
+											
+	  $consultar_transporte =  mysql_query ("SELECT patente
+												  FROM transporte 
+												where id_transporte = ".$id_trnsp."
+												") or die (mysql_error()); 	 
+
+	 $patente=mysql_fetch_assoc($consultar_transporte);
+	 
+	 $insert_patente_acoplado = mysql_query("upadate acoplado
+											set paten = ".$patente."
+											where id_Acoplado = '".$acoplado."'
+												;")or die (mysql_error()); 
+	 
 	 
 	$file = 'jr-qrcode.png';
 	
