@@ -38,13 +38,13 @@
 												") or die (mysql_error()); 	 
 
 	 $patente=mysql_fetch_assoc($consultar_transporte);
-	 
-	 $insert_patente_acoplado = mysql_query("upadate acoplado
-											set paten = ".$patente."
-											where id_Acoplado = '".$acoplado."'
-												;")or die (mysql_error()); 
-	 
-	 
+
+	if($acoplado != 0){
+	 	$update_patente = mysql_query("UPDATE acoplado
+									   SET paten ='".$patente["patente"]."'
+									   WHERE id_acoplado = '".$acoplado."'")or die (mysql_error());
+
+	}
 	$file = 'jr-qrcode.png';
 	
 	$data ="";
@@ -54,7 +54,7 @@
  		<p><a href='javascript:history.go(-1)'>VOLVER ATRÁS</a></p>"; 
  					 
 	
-	echo '<img src="jr-qrcode.png" />';
+	echo '<img src="qr.php?id='.$id_viaj.'" />';
  	?> 
  </div>	 
  </html> 
