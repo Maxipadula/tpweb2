@@ -14,7 +14,7 @@
 		$conexion = mysql_connect($puerto, $usuario,$password) or die("no conecta");
 		mysql_select_db ("tpFinal",$conexion) or die ("no db");
 		
-		$consulta_reparacion = mysql_query ("SELECT R.codigo_reparacion ID,M.nombre mecanico,R.costo costo,R.fecha fecha,REP.descripcion repuesto,O.cantidad cantidad,MA.descripcion marca,MO.descripcion modelo
+		$consulta_reparacion = mysql_query ("SELECT R.codigo_reparacion ID,M.nombre mecanico,R.costo costo,R.fecha fecha,REP.descripcion repuesto,O.cantidad cantidad,MA.descripcion marca,MO.descripcion modelo,R.km km
 											 FROM mecanico M inner join
 												  reparacion R on M.id_mecanico=R.id_mecanico inner join
 												  orden O on R.id_orden = O.id_orden inner join
@@ -29,9 +29,9 @@
         "	;	
 						if ($row = mysql_fetch_array($consulta_reparacion)){
 						echo "<table border = '1'> \n";
-						echo "<tr><td>TRANSPORTE</td><td>MECANICO</td><td>FECHA DE REPARACION</td><td>REPUESTO</td><td>CANTIDAD</td><td>COSTO</td></tr>\n";
+						echo "<tr><td>TRANSPORTE</td><td>MECANICO</td><td>FECHA DE REPARACION</td><td>REPUESTO</td><td>CANTIDAD</td><td>COSTO</td><td>KM RECORRIDOS</td></tr>\n";
 						do{
-							echo "<tr><td>".$row["marca"]." ".$row["modelo"]."</td><td>".$row["mecanico"]."</td><td>".$row["fecha"]."</td><td>".$row["repuesto"]."</td><td>".$row["cantidad"]."</td><td>".$row["costo"]."</td><td class='tBotonElim'><a href='".$validar_eliminar_reparacion ."?ID=".$row["ID"]."' class = 'tLink' >Eliminar</a></td></tr> \n";     
+							echo "<tr><td>".$row["marca"]." ".$row["modelo"]."</td><td>".$row["mecanico"]."</td><td>".$row["fecha"]."</td><td>".$row["repuesto"]."</td><td>".$row["cantidad"]."</td><td>".$row["costo"]."</td><td>".$row["km"]."</td><td class='tBotonElim'><a href='".$validar_eliminar_reparacion ."?ID=".$row["ID"]."' class = 'tLink' >Eliminar</a></td></tr> \n";     
 						} while ($row = mysql_fetch_array($consulta_reparacion));
 						echo "</table> \n";
 						
