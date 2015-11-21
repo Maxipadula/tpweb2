@@ -112,7 +112,7 @@
 								
 						while($repuesto = mysql_fetch_array($consulta_respuesto)){
 									echo "<label><input type='checkbox' id='rep' name='repuesto[]}' value='".$repuesto["id_repuesto"]."' >".$repuesto["descripcion"]."</input> </label>
-										<input type='text' name='".$repuesto["descripcion"]."' class='input' />
+										<input type='text' name='".$repuesto["id_repuesto"]."' class='input' />
 										<br>";
 									
 									
@@ -133,7 +133,10 @@
  					<input type="text" name="fecha">
  				</label>
  				</div>
- 				</br>					
+ 				</br>
+
+					
+ 		
 				
 							
 				<input type="submit" value="Agregar">

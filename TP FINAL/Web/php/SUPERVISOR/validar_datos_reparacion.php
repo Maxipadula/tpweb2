@@ -6,6 +6,7 @@
  	$id_mecani =$_POST ["mecanicos"]; 
  	$id_transp =$_POST ["transporte"]; 
  	$fech =$_POST ["fecha"]; 
+
  	 	 
  	include ('../rutas.php');
 	
@@ -17,6 +18,16 @@
 
 
 	foreach($_POST['repuesto'] as $id_repuesto){
+		
+		$consulta_km= mysql_query("SELECT *
+									FROM transporte
+									WHERE id_transporte = '".$id_transp."'") or die (mysql_error());
+										   
+		$transportes = mysql_fetch_assoc($consulta_km);
+	
+		
+		$km = $transportes["km_recorridos"];
+
 		
 		$consulta_repuestos = mysql_query("SELECT *
 									       FROM repuesto
@@ -32,7 +43,7 @@
 		$orden=mysql_fetch_assoc($consulta_id_orden);
 		$id_orden=$orden["ID"]+1;
 		
-		$cantidad = $_POST[$repuestos["descripcion"]];
+		$cantidad = $_POST[$repuestos["id_repuesto"]];
 		
 		$costo=$repuestos["costo"]*$cantidad;
 		
@@ -53,8 +64,8 @@
 		
 		
 		
-		$insertar_reparacion=mysql_query("insert into reparacion (codigo_reparacion, id_mecanico, id_transporte,id_orden, costo, fecha)
-															values	(".$codigo_reparacion.",".$id_mecani.",'".$id_transp."','".$id_orden."', '".$costo."', '".$fech."')")or die(mysql_error());
+		$insertar_reparacion=mysql_query("insert into reparacion (codigo_reparacion, id_mecanico, id_transporte,id_orden, costo, fecha,km)
+															values	(".$codigo_reparacion.",".$id_mecani.",'".$id_transp."','".$id_orden."', '".$costo."', '".$fech."', '".$km."')")or die(mysql_error());
 	}
 	
   

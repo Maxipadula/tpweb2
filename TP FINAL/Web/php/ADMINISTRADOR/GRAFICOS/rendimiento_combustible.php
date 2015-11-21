@@ -21,7 +21,7 @@
 				echo "<tr><td>MARCA</td><td>MODELO</td><td>PATENTE</td><td>ESTADO</td><td>KM RECORRIDOS</td><td>NUMERO DE CHASIS</td><td>NUMERO DE MOTOR</td></tr>\n";
 			
 				do{
-					echo "<tr><td>".$row["marca"]."</td><td>".$row["modelo"]."</td><td>".$row["patente"]."</td><td>".$row["estado"]."</td><td>".$row["km"].".KM</td><td>".$row["chasis"]."</td><td>".$row["motor"]."</td><td class='tBotonAgregar'><a href='".$graficar_combustible ."?ID=".$row["ID"]."' class = 'tLink'>Seleccionar</a></td><br></tr> \n";     
+					echo "<tr><td>".$row["marca"]."</td><td>".$row["modelo"]."</td><td>".$row["patente"]."</td><td>".$row["estado"]."</td><td>".$row["km"].".KM</td><td>".$row["chasis"]."</td><td>".$row["motor"]."</td><td class='tBotonAgregar'><a target='_blank' href='".$graficar_combustible ."?ID=".$row["ID"]."' class = 'tLink'>Seleccionar</a></td><br></tr> \n";     
 				
 				}while ($row = mysql_fetch_array($consulta_transporte));
 			

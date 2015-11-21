@@ -33,7 +33,7 @@
 		
 		   <li><a href="<?php echo $rendimiento_combustible ?>">RENDIMIENTO PROMEDIO DE CONSUMO DE COMBUSTIBLE</a></li>
 
-		   <li> <a href="">SALIR</a></li>
+		   <li> <a href="./<?php echo $administrador_home ?>">SALIR</a></li>
 	
 
        </ul>

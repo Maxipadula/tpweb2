@@ -125,6 +125,7 @@
 			   $rendimiento_km = "rendimiento_km.php";
 			   $rendimiento_combustible="rendimiento_combustible.php";
 			   $graficar_combustible="graficar_combustible.php";
+			   $graficar_km ="graficar_km.php";
 			   
 				//listados 
 				$listados_datos="listados_datos.php";
