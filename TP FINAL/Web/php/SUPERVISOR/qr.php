@@ -4,6 +4,6 @@
 	$size = 5;
 	
 	$param = $_GET['id'];
-	$codeText = 'La ID de tu viaje es: '.$param.;
+	$codeText = 'La ID de tu viaje es: '.$param;
     QRcode::png($codeText);
 ?>
